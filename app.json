@@ -1,0 +1,39 @@
+{
+  "pages":[
+           "pages/index/index",  
+            "pages/movie/movie",
+            "pages/article/article",
+            "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#393d49",
+    "navigationBarTitleText": "电影欣赏",
+    "navigationBarTextStyle":"white"
+  },
+    "tabBar": {
+      "color":"#777777",
+      "selectedColor":"#393d49",
+      "backgroundColor":"#e2e2e2",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath":"images/home.png",
+          "selectedIconPath":"images/home_on.png"
+        },
+        {
+          "pagePath": "pages/movie/movie",
+          "text": "推荐",
+          "iconPath":"images/tj.png",
+          "selectedIconPath":"images/tj_on.png"
+        },
+        {
+          "pagePath": "pages/me/me",
+          "text": "我的",
+          "iconPath":"images/my.png",
+          "selectedIconPath":"images/my_on.png"
+        }
+      ]
+    }
+}

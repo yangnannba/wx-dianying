@@ -1,0 +1,49 @@
+.top{
+  background: #393d49;
+  width:auto;
+  height:460rpx;
+  padding:20rpx 30rpx 0;
+  clear: both;
+}
+.image{
+  width:270rpx;
+  height:398rpx;
+  float: left;
+  margin-right: 18rpx;
+}
+.right{
+  
+  float:left;
+  color:#fff;
+  font-size:34rpx;
+  width:400rpx;
+  line-height: 2;
+}
+.title{
+  font-size:50rpx;
+  color:#ffffff;
+  margin-bottom:26rpx;
+
+}
+.shijian{
+
+}
+.languages{
+  font-size: 34rpx;
+  padding:8rpx;
+  color:#fff;
+  background: rgba(0,0,0,0.3);
+
+}
+.rating{
+  color:red;
+  font-size: 38rpx;
+}
+.summary{
+  font-size: 32rpx;
+  line-height: 1.6em;
+  text-indent: 2em;
+  padding:30rpx;
+  clear:both;
+  text-align: justify;
+}

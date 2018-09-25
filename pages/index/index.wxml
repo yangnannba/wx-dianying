@@ -1,0 +1,76 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="*this" >
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='search'>
+<image class='header' src='/images/header.jpg'  mode="scaleToFill"></image>
+<input class="search_input" placeholder='请输入搜索...' bindblur='search' bindfocus='bindfocus' />
+</view>
+
+
+<view class='key' wx:if="{{keyshow}}">
+ <text class='key_h'>热门搜索词：</text>
+  <button class='key_btn'  wx:for="{{key}}" wx:key="key" size="mini"  bindtap='searchkey' data-name="{{item}}">{{item}}</button>
+</view>
+
+<scroll-view class='mymain'>
+  <navigator url="/pages/article/article?id={{item.id}}"  wx:for="{{movies}}" wx:key="">
+     <view class='item'>
+       <image src="{{item.images.small}}" class='image'></image>
+       <view class='right'>
+         <view class='title'><text>{{item.title}}</text></view>
+         <view  class='genres'>
+            <text wx:for="{{item.genres}}"  wx:key="key" >
+            [{{item}}]
+            </text>
+         </view>
+          <view  class='casts'>
+          <text>主演：</text><text wx:for="{{item.casts}}"  wx:key="key" >{{item.name}} </text>
+         </view>   
+          <view  class='directors'>
+          <text>导演：</text><text wx:for="{{item.directors}}"  wx:key="key" >{{item.name}} </text>
+         </view>
+        <view class='original_title'><text>{{item.original_title}}</text>({{item.year}})</view>                 <view class='average'><text>{{item.rating.average}}</text></view>         
+       </view>
+     </view> 
+  </navigator>
+</scroll-view>
+
+<view class="biaoti">吕克·贝松</view>
+<view class='index_main'>
+
+  <navigator class="item_navigator" url="/pages/article/article?id={{item.id}}"  wx:for="{{movies1}}" wx:key="">
+     <view class='item_index'>
+       <image src="{{item.images.small}}" class='item_image'><text>{{item.rating.average}}</text></image>
+  
+         <view class='item_title'><text>{{item.title}}</text></view>      
+
+     </view> 
+  </navigator>
+</view>
+<view class="biaoti">李小龙</view>
+<view class='index_main'>
+  <navigator  class="item_navigator" url="/pages/article/article?id={{item.id}}"  wx:for="{{movies2}}" wx:key="">
+     <view class='item_index'>
+       <image src="{{item.images.small}}" class='item_image'><text>{{item.rating.average}}</text></image>
+  
+         <view class='item_title'><text>{{item.title}}</text></view>      
+
+     </view> 
+  </navigator>
+</view>
+<view class="biaoti">周星驰</view>
+<view class='index_main'>
+  <navigator  class="item_navigator" url="/pages/article/article?id={{item.id}}"  wx:for="{{movies3}}" wx:key="">
+     <view class='item_index'>
+       <image src="{{item.images.small}}" class='item_image'><text>{{item.rating.average}}</text></image>
+  
+         <view class='item_title'><text>{{item.title}}</text></view>      
+
+     </view> 
+  </navigator>
+</view>

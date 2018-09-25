@@ -1,0 +1,23 @@
+<view class='article'>
+
+  <view class='top'>
+    <view class='title'><text>《{{movies.title}}》</text></view>
+    <view>
+    <image class='image' src='{{movies.images.small}}'></image>
+
+
+  <view class='right'>
+    <text  class="languages">{{movies.genres[0]}} / {{movies.tags[0]}}</text>
+
+    <view class='shijian'><text>{{movies.countries[0]}} / {{movies.durations[0]}}</text></view>    
+    <view><text>{{movies.pubdates[0]}}</text></view>    
+    <view class="rating"><text>{{movies.rating.average}}分</text></view>
+    </view>
+    </view>
+  </view>
+
+  <view class='summary'>
+  <text>简介：</text><text>{{movies.summary}}</text>
+  </view>
+
+</view>

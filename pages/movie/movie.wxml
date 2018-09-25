@@ -1,0 +1,31 @@
+<view class='name'>
+  <text>{{name}}</text>
+</view>
+
+<scroll-view class='mymain'>
+  <navigator url="/pages/article/article?id={{item.id}}"  wx:for="{{movies}}" wx:key="">
+     <view class='item'>
+       <image src="{{item.images.small}}" class='image'></image>
+       <view class='right'>
+         <view class='title'><text>{{item.title}}</text></view>
+         <view  class='genres'>
+            <text wx:for="{{item.genres}}"  wx:key="key" >
+            [{{item}}]
+            </text>
+         </view>
+          <view  class='casts'>
+          <text>主演：</text><text wx:for="{{item.casts}}"  wx:key="key" >{{item.name}} </text>
+         </view>   
+          <view  class='directors'>
+          <text>导演：</text><text wx:for="{{item.directors}}"  wx:key="key" >{{item.name}} </text>
+         </view>
+        <view class='original_title'><text>{{item.original_title}}</text>({{item.year}})</view>                 <view class='average'><text>{{item.rating.average}}</text></view>         
+       </view>
+     </view> 
+  </navigator>
+  <view class='jiazai' wx:if="{{jiazai}}">
+      <text class='animation1'></text>
+      <text class='animation2'></text>
+      <text class='animation3'></text>
+  </view>
+</scroll-view>
