@@ -1,5 +1,6 @@
 # wx-dianying
-豆瓣电影top250
+这是我做的小程序----豆瓣电影top250
+
 
 
 ![Image text](https://raw.githubusercontent.com/yangnannba/img-zy/master/img/dy2.jpg)
