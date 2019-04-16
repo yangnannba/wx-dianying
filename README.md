@@ -3,5 +3,5 @@
 
 
 
-![Image text](https://raw.githubusercontent.com/yangnannba/img-zy/master/img/dy2.jpg)
-![Image text](https://raw.githubusercontent.com/yangnannba/img-zy/master/img/dy1.jpg)
+![Image text](https://raw.githubusercontent.com/yangnannba/wx-dianying/master/images/dy2.jpg)
+![Image text](https://raw.githubusercontent.com/yangnannba/wx-dianying/master/images/dy1.jpg)
